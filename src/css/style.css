@@ -51,7 +51,7 @@ h2{
 }
 /*header*/
 #main-header{
-  background-color: var(--powder-blue-2);
+  background-color: var(--black);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -71,7 +71,7 @@ h2{
 }
 /*footer*/
 #main-footer{
-  background-color: var(--powder-blue-2);
+  background-color: var(--black);
   color:var(--white);
   display: flex;
   flex-direction: row;
@@ -145,6 +145,16 @@ h2{
   font-weight: normal;
 }
 button{
+  display: inline-block;
+  position: relative;
+  padding:1.2rem;
+  background-color: transparent;
+  border: 1px solid var(--black);
+  color: var(--black);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.button-hero{
   display: inline-block;
   position: relative;
   padding:1.2rem;
