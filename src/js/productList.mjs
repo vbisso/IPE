@@ -1,7 +1,7 @@
 import { fetchProducts, renderListWithTemplate } from "./utils.mjs";
 export function productTemplate(product) {
   return `<li class="product-container">
-      <a href="../product_pages/?product=${product.id}">
+      <a href="../product-pages/?product=${product.id}">
       <img
         src="${product.img}"
         alt="Image of ${product.name}"

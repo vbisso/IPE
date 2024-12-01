@@ -10,7 +10,7 @@
   <title>Island Park Expeditions</title>
 </head>
 <body>
-  <header id="main-header">
+  <header id="main-header-home-page">
     <div>
       <a href="./index.html"><img src="public/images/logo-horizontal-white-blue.png" alt="Island Park Expeditions Logo"></a>
     </div>
@@ -22,6 +22,7 @@
   <main id="main-content">
 
     <div id="hero">
+      <div class="overlay"></div>
       <video autoplay muted loop playsinline id="background-video">
         <source src="public/images/hero2!.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -37,8 +38,20 @@
       </div>
 
         <ul class="products-flex">
-         <li class="summer-rentals"><a href="/product-list/index.html?category=summer"><img  src="public/images/summer-category.svg"></a><p>Summer Rentals</p></li>
-          <li class="winter-rentals"><a href="/product-list/index.html?category=winter"><img src="public/images/winter-category.svg"></a><p>Winter Rentals</p></li>
+          
+          <li class="summer-rentals">
+            <img  src="public/images/summer-category.svg"> 
+            <div class="overlay">
+            </div>
+            <div class="position-abosulute-text"><p>Summer Rentals</p><div class="button-wrapper"><a href="/product-list/index.html?category=summer"><button class="button-hero">View More</button></a></div></div>
+          </li>
+
+          <li class="winter-rentals">
+            <img src="public/images/winter-category.svg">
+            <div class="overlay"></div>
+            <div class="position-abosulute-text"><p>Winter Rentals</p><div class="button-wrapper"><a href="/product-list/index.html?category=winter"><button class="button-hero">View More</button></a></div></div>
+          </li>
+
         </ul>
 
       
@@ -52,15 +65,18 @@
         <div class="button-wrapper"><button>Explore</button></div>
       </div>
     </section>
+
     <section class="what-to-eat">
+
       <div class="what-to-eat-padding">
         <h2>Taste the best of Island Park</h2>
         <p>Enjoy a wide variety of pizzas at Blue Buffalo Grill, crafted with fresh ingredients and cooked to perfection. Whether you're staying at the resort or passing through, our inviting restaurant is the perfect spot to grab a slice while admiring the beautiful natural surroundings. Treat yourself to flavors that are just as unforgettable as the views!</p>
         <div class="button-wrapper"><button>View Menu</button></div>
       </div>
-      <div class="what-to-eat-padding"><img src="public/images/BBR-Amish.jpg" alt="Blue Buffalo Resort"></div>
+      <div class="what-to-eat-padding"><img src="public/images/bbr-grill.JPG" alt="Blue Buffalo Grill"></div>
 
     </section>
+
     <section class="saved-rentals">
       <div class="padding-left"><h2>Complete your adventure, book your favorite rentals</h2></div>
       <ul class="products-flex">
