@@ -1,0 +1,23 @@
+{
+    "rental_periods": [
+      {
+        "type": "Full Day",
+        "start_time": "9:00 AM",
+        "end_time": "5:00 PM",
+        "hours": 8
+      },
+      {
+        "type": "Half Day Morning",
+        "start_time": "9:00 AM",
+        "end_time": "1:00 PM",
+        "hours": 4
+      },
+      {
+        "type": "Half Day Afternoon",
+        "start_time": "1:00 PM",
+        "end_time": "5:00 PM",
+        "hours": 4
+      }
+    ]
+  }
+  

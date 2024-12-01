@@ -1,3 +1,12 @@
+async function convertToJson(res) {
+  const data = await res.json();
+  if (res.ok) {
+    return data;
+  } else {
+    throw { name: "servicesError", message: data.Message };
+  }
+}
+
 export function loadTemplate(path) {
   return async function () {
     const res = await fetch(path);
@@ -22,6 +31,21 @@ export async function loadHeaderFooter() {
     await renderWithTemplate(footerTemplateFn, footerEl);
   }
 }
+
+export async function fetchProducts(category) {
+  let jsonFile = "";
+
+  if (category === "summer") {
+    jsonFile = "summer.json"; // Summer category
+  } else if (category === "winter") {
+    jsonFile = "winter.json"; // Winter category
+  }
+
+  // Fetch the appropriate JSON file
+  const response = await fetch(`/public/json/${jsonFile}`);
+  const data = await convertToJson(response);
+  return data;
+}
 export async function renderWithTemplate(
   templateFn,
   parentElement,
@@ -38,4 +62,26 @@ export async function renderWithTemplate(
   if (callback) {
     callback(data);
   }
+}
+
+export function getParam(param) {
+  const queryString = window.location.search;
+  //console.log(queryString);
+  const urlParams = new URLSearchParams(queryString);
+  //console.log(urlParams);
+  const product = urlParams.get(param);
+  return product;
+}
+export function renderListWithTemplate(
+  templateFn,
+  parentElement,
+  list,
+  position = "afterbegin",
+  clear = true
+) {
+  if (clear) {
+    parentElement.innerHTML = "";
+  }
+  const htmlString = list.map(templateFn);
+  parentElement.insertAdjacentHTML(position, htmlString.join(""));
 }

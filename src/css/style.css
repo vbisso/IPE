@@ -22,12 +22,13 @@
   --steel-blue: #365b6d;
 
   --font-body: Sans-serif,Arial, Helvetica;
-  --font-title: "Almaq Rough";
-  --font-subtitle: "Almaq Refined";
+  --font-title: lato, sans-serif;
+  --font-subtitle: lato, sans-serif;
 }
 /*fonts*/
 *{
   box-sizing: border-box;
+  margin: 0px;
 }
 
 html, body {
@@ -46,8 +47,16 @@ h1,h2{
   font-weight: normal;
 }
 h2{
-  margin-left: 30px;
+  margin: 20px 0;
   font-size: 2.5rem;
+}
+h4{
+  text-decoration: underline;
+}
+li,a{
+  list-style: none;
+  text-decoration: none;
+  color: var(--black);
 }
 /*header*/
 #main-header{
@@ -144,6 +153,9 @@ h2{
   font-size: 85px;
   font-weight: normal;
 }
+.button-wrapper{
+  margin-top: 1.5rem;
+}
 button{
   display: inline-block;
   position: relative;
@@ -171,6 +183,9 @@ button{
   width: calc(100% - 3.5rem);
 }
 /*products-home*/
+.padding-left{
+  padding:3.5rem;
+}
 li{
   list-style: none;
   text-align: center;
@@ -180,8 +195,13 @@ li{
 }
  
 .products img, .saved-rentals img{
-  width: 20%;
+  width: 100%;
 }
+.summer-rentals, .winter-rentals{
+  cursor: pointer;
+  max-width: 600px;
+}
+
 .products ul,p{
   margin: 0;
   padding: 0;
@@ -212,4 +232,28 @@ li{
 }
 .what-to-eat-padding{
   padding: 0 4rem 4rem 2rem;
+}
+/*product-list*/
+.products-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+.product-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  max-width: 420px;
+  height: 450px;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  margin: 1rem;}
+.product-container img{
+  width: 75%;
 }
