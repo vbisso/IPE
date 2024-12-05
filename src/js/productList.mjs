@@ -8,8 +8,17 @@ export function productTemplate(product) {
       />
       <h4 class="card_type">${product.type}</h4>
       <h3 class="card__name">${product.model}</h3>
-      <p>Full Day: $${product.price["full_day"]}</p>
-      <p>Half Day: $${product.price["half_day"]}</p>
+      <div class="product_prices_container">
+      <div class=product_prices_wrapper> 
+        <p class="product_prices"> $${product.price["full_day"]}</p>
+        <p>Full Day</p>
+      </div>
+      <div class="product_prices_wrapper"> 
+        <p class="product_prices"> $${product.price["half_day"]}</p>
+        <p>Half Day</p>
+      </div>
+      </div>
+      
 
     </li>`;
 }

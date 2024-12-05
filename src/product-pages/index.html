@@ -7,26 +7,48 @@
   <meta name="keywords" content="Island Park, Rentals, Snowmobiles,Kayaks">
   <meta name="author" content="Valeria Bisso">
   <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.css" rel="stylesheet">
   <title>Rentals</title>
 </head>
 <body>
   <header id="main-header">
 
   </header>
-  <main id="main-content">
+  <main class="main-content">
 
+    <div class="product-page-wrapper">
+        <section class="product-detail">
+          <h3 id="productName"></h3>
 
-    <section class="product-detail">
-        <h3 id="productName"></h3>
-        <h2 class="divider" id="productNameWithoutBrand"></h2>
-        <img id="productImage" class="divider" src="" alt="" />
-        <p class="product-card__price" id="productFinalPrice"></p>
-        <p class="product__color" id="productColorName"></p>
-        <p class="product__description" id="productDescriptionHtmlSimple"></p>
-        <div class="product-detail__add">
-          <button id="addToCart" data-id="">Add to Cart</button>
-        </div>
+          <img id="productImg" src="" alt="" />
+        
+          <p id="product_description"></p>
+          
+          <div class="product_prices_container">
+            <div class="product_prices_wrapper">
+              <p class="product_prices" id="product_price_full"></p> 
+              <p>Full Day</p>
+            </div>
+            <div class="product_prices_wrapper">
+              <p class="product_prices" id="product_price_half"></p>
+              <p>Half Day</p>
+            </div>
+          </div>
+
       </section>
+
+      <section class="book-now-calendar">
+
+        <div id="calendar">
+          
+        </div>
+
+        <button class="button-wrapper" id="bookNow" data-id="">Book now<br>→</button>
+
+      </section>
+
+    </div>
+    
 
   </main>
 
@@ -34,7 +56,11 @@
   <footer id="main-footer">
  
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.js"></script>
   <script src="../js/product-page.js" type="module"></script>
+  
 
 </body>
 </html>

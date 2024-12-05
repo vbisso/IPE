@@ -33,19 +33,16 @@ export async function loadHeaderFooter() {
 }
 
 export async function fetchProducts(category) {
-  let jsonFile = "";
+  const response = await fetch(`/public/json/products.json`);
+  const products = await convertToJson(response);
 
-  if (category === "summer") {
-    jsonFile = "summer.json"; // Summer category
-  } else if (category === "winter") {
-    jsonFile = "winter.json"; // Winter category
+  if (category) {
+    return products.filter((product) => product.season === category);
   }
 
-  // Fetch the appropriate JSON file
-  const response = await fetch(`/public/json/${jsonFile}`);
-  const data = await convertToJson(response);
-  return data;
+  return products;
 }
+
 export async function renderWithTemplate(
   templateFn,
   parentElement,
@@ -87,7 +84,14 @@ export function renderListWithTemplate(
 }
 
 export async function findProductById(id) {
-  const response = await fetch(baseURL + `product/${id}`);
-  const product = await convertToJson(response);
-  return product.Result;
+  const response = await fetch(`/public/json/products.json`);
+  const products = await convertToJson(response);
+
+  const product = products.find((product) => product.id === id);
+
+  if (product) {
+    return product;
+  } else {
+    throw { name: "ProductNotFoundError", message: "Product not found." };
+  }
 }
