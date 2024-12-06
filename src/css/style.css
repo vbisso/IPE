@@ -53,6 +53,7 @@ h2{
 }
 h4{
   text-decoration: underline;
+  margin-top: 1rem;
 }
 li,a{
   list-style: none;
@@ -184,28 +185,36 @@ li,a{
   z-index: 1;
   color: var(--white);
   font-size: 2rem;
+  margin-bottom: 2rem;
 
 }
 .position-abosulute-text a{
   color: var(--white);
 }
 .button-wrapper{
-  margin: 1.5rem 0;
-}
-button{
-  display: inline-block;
-  position: relative;
-  padding:1.2rem;
-  background-color: transparent;
   border: 1px solid var(--black);
   color: var(--black);
+  margin: 1.5rem 0;
+  
+}
+  
+
+button{
+  padding: 1.5rem 3rem;
+  display: block;
+  position: relative;
+  background-color: transparent;
+  border:none;
   font-size: 1.5rem;
   cursor: pointer;
+  margin: auto;
 }
+  
 .button-hero{
   display: inline-block;
   position: relative;
   padding:1.2rem;
+  margin-top: 1.5rem;
   background-color: transparent;
   border: 1px solid var(--white);
   color: var(--white);
@@ -331,19 +340,17 @@ li{
   row-gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin: 2rem;
+  margin: 2rem 1rem;
 }
 .product-detail{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: 2rem;
   max-width: 620px;
   border: 1px solid var(--white);
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
 }
 .product-detail h3{
   text-align: center; 
@@ -359,6 +366,7 @@ li{
   flex-direction: row;
   align-items: center;
   padding: 5px;
+  cursor: pointer;
 }
 .product_prices{
   background-color: #e0f7e7; 
@@ -376,14 +384,16 @@ li{
   align-items: center;
   margin-top: .3rem;
 }
+.about-the-rental li{
+  text-align: left;
+  list-style: disc;
+}
 .book-now-calendar{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   max-width: 380px;
 }
 #calendar h2{
   font-size: 1.5rem;
   margin-top: 1rem;
 }
+
