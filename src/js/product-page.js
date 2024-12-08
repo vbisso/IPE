@@ -1,4 +1,4 @@
-import { loadHeaderFooter, getParam } from "./utils.mjs";
+import { loadHeaderFooter, getParam, setLocalStorage } from "./utils.mjs";
 import productDetails from "./productPage.mjs";
 
 loadHeaderFooter();
@@ -18,8 +18,13 @@ $(document).ready(function () {
       const selectedDate = startDate.format("YYYY-MM-DD"); // format as needed
       $("#selectedDate").text("Selected Date: " + selectedDate);
 
-      // Optional: Perform other actions with the selected date
       console.log("Selected Date: ", selectedDate);
+
+      if (selectedDate) {
+        document.querySelector(".product_prices_container").style.display =
+          "flex";
+        setLocalStorage("so-date", selectedDate);
+      }
     },
   });
 });

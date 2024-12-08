@@ -1,3 +1,5 @@
+import dayjs from "dayjs";
+
 async function convertToJson(res) {
   const data = await res.json();
   if (res.ok) {
@@ -101,4 +103,12 @@ export function getLocalStorage(key) {
 // save data to local storage
 export function setLocalStorage(key, data) {
   localStorage.setItem(key, JSON.stringify(data));
+}
+
+export function getElementPriceID(element) {
+  return element.firstElementChild.id;
+}
+export function formatDate(dateStr) {
+  const date = dayjs(dateStr);
+  return date.format("dddd, MMMM D, YYYY");
 }

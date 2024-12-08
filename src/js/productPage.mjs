@@ -1,4 +1,9 @@
-import { findProductById, setLocalStorage, getLocalStorage } from "./utils.mjs";
+import {
+  findProductById,
+  setLocalStorage,
+  getLocalStorage,
+  getElementPriceID,
+} from "./utils.mjs";
 let product = {};
 export default async function productDetails(productId) {
   product = await findProductById(productId);
@@ -12,10 +17,33 @@ function redirectToBookNow() {
 function addToBook() {
   let cart = getLocalStorage("so-book");
   if (!cart) {
-    cart = []; //initializing it as an empty array if null
+    cart = []; // Initialize as an empty array if null
   }
-  cart.push(product);
-  setLocalStorage("so-book", cart);
+  const bookNowPrices = document.querySelectorAll(".product_prices_wrapper");
+
+  bookNowPrices.forEach((price) => {
+    price.addEventListener("click", () => {
+      const selectedOption =
+        price.querySelector(".product_prices").id === "product_price_full"
+          ? "Full Day"
+          : "Half Day";
+
+      const selectedPrice =
+        price.querySelector(".product_prices").id === "product_price_full"
+          ? product.price["full_day"]
+          : product.price["half_day"];
+
+      cart.push({
+        ...product,
+        selectedOption: selectedOption,
+        selectedPrice: selectedPrice,
+      });
+
+      console.log(cart);
+      setLocalStorage("so-book", cart);
+      redirectToBookNow();
+    });
+  });
 }
 
 function renderProductDetails() {
@@ -29,10 +57,5 @@ function renderProductDetails() {
   document.querySelector("#product_description").innerHTML =
     product.description;
 
-  const bookNowPrices = document.querySelectorAll(".product_prices_wrapper");
-
-  bookNowPrices.forEach((price) => {
-    price.addEventListener("click", redirectToBookNow);
-    price.addEventListener("click", addToBook);
-  });
+  addToBook();
 }

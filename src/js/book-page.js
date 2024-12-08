@@ -1,3 +1,5 @@
-import { loadHeaderFooter, getParam } from "./utils.mjs";
+import { loadHeaderFooter, getLocalStorage } from "./utils.mjs";
+import bookPage from "./bookPage.mjs";
 
 loadHeaderFooter();
+bookPage();
