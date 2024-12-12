@@ -1,79 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Island Park Expeditions">
-  <meta name="keywords" content="Island Park, Rentals, Snowmobiles,Kayaks">
-  <meta name="author" content="Valeria Bisso">
-  <link rel="stylesheet" href="../css/style.css">
-  <title>Book Your Adventure</title>
-</head>
-<body>
-  <header id="main-header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Island Park Expeditions" />
+    <meta name="keywords" content="Island Park, Rentals, Snowmobiles,Kayaks" />
+    <meta name="author" content="Valeria Bisso" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Book Your Adventure</title>
+  </head>
+  <body>
+    <header id="main-header" class="flex-row"></header>
+    <main id="main-content">
+      <h2 class="padding-left">You are booking</h2>
 
-  </header>
-  <main id="main-content">
-    <p>You are booking</p>
+      <section class="book-details">
+        <img style="width: 30%" id="book-details-img" src="" alt="" />
 
-
-    <section class="book-details">
-      
-
-      <div class="book-detail-left">
-        
-          <img style="height: 30%;" id="book-details-img" src="" alt="">
-  
-        
-        <div>
+        <div class="book-detail-left">
           <h3 id="book-details-model"></h3>
           <h3 id="book-details-option"></h3>
           <p id="book-details-date"></p>
-          <form class="half-day-options-form">
+          <div class="half-day-options-form hide">
+            <p>Please select half day option:</p>
             <div class="half-day-options white-border">
-              <input type="radio" name="duration" id="half-day-morning" value="Half Day Morning Rental">
+              <input
+                type="radio"
+                name="duration"
+                id="half-day-morning"
+                value="Half Day Morning Rental"
+              />
               <label for="half-day-morning">9:00 AM - 1:00 PM</label>
             </div>
             <div class="half-day-options white-border">
-              <input type="radio" name="duration" id="half-day-afternoon" value="Half Day Afternoon Rental">
+              <input
+                type="radio"
+                name="duration"
+                id="half-day-afternoon"
+                value="Half Day Afternoon Rental"
+              />
               <label for="half-day-afternoon">1:00 PM - 4:00 PM</label>
             </div>
-          </form>
+          </div>
+
+          <p>Select Quantity:</p>
+          <div class="quantity-form white-border">
+            <select name="quantity" id="quantity">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+
+            <label for="quantity" id="quantity-label"></label>
+            <p id="selected-price"></p>
+          </div>
         </div>
+      </section>
+      <div class="divider"></div>
+    </main>
 
-      </div>
-
-
-      <div class="book-detail-right">
-        <form class="quantity-form product_prices_wrapper">
-          
-          <select name="quantity" id="quantity">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-          <label for="quantity" id="quantity-label" ></label>
-          <p id="selected-price"></p>
-        </form>
-
-      </div>
-
-
-
-    </section>
-    
- 
-
-  </main>
-
-
-  <footer id="main-footer">
- 
-  </footer>
-  <script src="../js/book-page.js" type="module"></script>
-
-</body>
+    <footer id="main-footer" class="flex-row"></footer>
+    <script src="../js/book-page.js" type="module"></script>
+  </body>
 </html>

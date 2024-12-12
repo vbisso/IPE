@@ -1,14 +1,10 @@
-import {
-  getLocalStorage,
-  renderListWithTemplate,
-  formatDate,
-} from "./utils.mjs";
+import { getLocalStorage, formatDate } from "./utils.mjs";
 
 function rederBookDetails(item) {
   document.querySelector("#book-details-img").src = item[0].img;
   document.querySelector("#book-details-model").innerText = item[0].model;
   document.querySelector("#book-details-option").innerText =
-    item[0].selectedOption;
+    item[0].selectedOption + " " + item[0].type + " Rental";
   document.querySelector("#quantity-label").innerText = item[0].model;
   document.querySelector("#selected-price").innerText =
     "$" + item[0].selectedPrice;
@@ -34,3 +30,5 @@ export default function bookPage() {
 
   //displayCartTotal(total);
 }
+
+function displayHalfDayOptions() {}

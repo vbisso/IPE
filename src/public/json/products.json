@@ -1,158 +1,157 @@
 [
-    {
-      "id": "P1",
-      "model": "Sea Breeze Inflatable SUP",
-      "type": "Inflatable",
-      "length": "10'6\"",
-      "price": {
-        "full_day": 50.00,
-        "half_day": 30.00
-      },
-      "description": "A durable, lightweight inflatable paddleboard perfect for beginners and casual paddlers.",
-      "img": "https://bestwayusa.com/media/catalog/product/6/f/6f950e810e20520fc5bdbd550bf27bbf716a1739_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=685&width=685&canvas=685:685",
-      "season": "summer"
+  {
+    "id": "P1",
+    "model": "Sea Breeze Inflatable SUP",
+    "type": "Paddleboard",
+    "length": "10'6\"",
+    "price": {
+      "full_day": 50.0,
+      "half_day": 30.0
     },
-    {
-      "id": "P2",
-      "model": "Red Paddle Co 10'6\" Ride",
-      "type": "Inflatable",
-      "length": "10'6\"",
-      "price": {
-        "full_day": 75.00,
-        "half_day": 45.00
-      },
-      "description": "Designed for all-around use, this inflatable SUP offers stability and performance.",
-      "img": "https://greenwatersports.com/content/wp-content/uploads/2021/10/2022-red-paddle-co-ride-10-6-special-edition-purple-best-all-round-sup-womens-paddle-board-green-water-sports.jpg",
-      "season": "summer"
+    "description": "A durable, lightweight inflatable paddleboard perfect for beginners and casual paddlers.",
+    "img": "https://bestwayusa.com/media/catalog/product/6/f/6f950e810e20520fc5bdbd550bf27bbf716a1739_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=685&width=685&canvas=685:685",
+    "season": "Summer"
+  },
+  {
+    "id": "P2",
+    "model": "Red Paddle Co 10'6\" Ride",
+    "type": "Paddleboard",
+    "length": "10'6\"",
+    "price": {
+      "full_day": 75.0,
+      "half_day": 45.0
     },
-    {
-      "id": "P3",
-      "model": "Bote Rackham Aero",
-      "type": "Inflatable",
-      "length": "12'0\"",
-      "price": {
-        "full_day": 100.00,
-        "half_day": 60.00
-      },
-      "description": "A high-performance paddleboard for avid adventurers and anglers, with ample storage and stability.",
-      "img": "https://www.boteboard.com/cdn/shop/files/124iRK23BS-photo-02-min.png?v=1694195695",
-      "season": "summer"
+    "description": "Designed for all-around use, this inflatable SUP offers stability and performance.",
+    "img": "https://greenwatersports.com/content/wp-content/uploads/2021/10/2022-red-paddle-co-ride-10-6-special-edition-purple-best-all-round-sup-womens-paddle-board-green-water-sports.jpg",
+    "season": "Summer"
+  },
+  {
+    "id": "P3",
+    "model": "Bote Rackham Aero",
+    "type": "Kayak",
+    "length": "12'0\"",
+    "price": {
+      "full_day": 100.0,
+      "half_day": 60.0
     },
-    {
-      "id": "P4",
-      "model": "Starboard HyperNut",
-      "type": "Rigid",
-      "length": "9'10\"",
-      "price": {
-        "full_day": 85.00,
-        "half_day": 50.00
-      },
-      "description": "A rigid, high-performance SUP designed for stability and speed in various water conditions.",
-      "img": "https://irockersup.com/cdn/shop/files/BLACKFIN-MODEL-XL-FUCHSIA_BLUE-PDP-1200_720x@2x.progressive.png.jpg?v=1696018642",
-      "season": "summer"
+    "description": "A high-performance paddleboard for avid adventurers and anglers, with ample storage and stability.",
+    "img": "https://www.boteboard.com/cdn/shop/files/124iRK23BS-photo-02-min.png?v=1694195695",
+    "season": "Summer"
+  },
+  {
+    "id": "P4",
+    "model": "Starboard HyperNut",
+    "type": "Paddleboard",
+    "length": "9'10\"",
+    "price": {
+      "full_day": 85.0,
+      "half_day": 50.0
     },
-    {
-      "id": "K1",
-      "model": "Ocean Kayak Malibu Two",
-      "type": "Kayak",
-      "length": "12'0\"",
-      "price": {
-        "full_day": 60.00,
-        "half_day": 35.00
-      },
-      "description": "A tandem sit-on-top kayak perfect for two people to enjoy calm waters, ideal for families or friends.",
-      "img": "https://www.boteboard.com/cdn/shop/files/126iZP22NA-photo-01Copy-min.png?v=1726529464",
-      "season": "summer"
+    "description": "A rigid, high-performance SUP designed for stability and speed in various water conditions.",
+    "img": "https://irockersup.com/cdn/shop/files/BLACKFIN-MODEL-XL-FUCHSIA_BLUE-PDP-1200_720x@2x.progressive.png.jpg?v=1696018642",
+    "season": "Summer"
+  },
+  {
+    "id": "K1",
+    "model": "Ocean Kayak Malibu Two",
+    "type": "Kayak",
+    "length": "12'0\"",
+    "price": {
+      "full_day": 60.0,
+      "half_day": 35.0
     },
-    {
-      "id": "K2",
-      "model": "Wilderness Systems Pungo 120",
-      "type": "Kayak",
-      "length": "12'0\"",
-      "price": {
-        "full_day": 70.00,
-        "half_day": 40.00
-      },
-      "description": "A stable, fast, and comfortable kayak, perfect for exploring lakes and rivers.",
-      "img": "https://ecofishingshop.com/cdn/shop/products/wilderness-systems-pungo-120-3_600x600.jpg?v=1671558020",
-      "season": "summer"
+    "description": "A tandem sit-on-top kayak perfect for two people to enjoy calm waters, ideal for families or friends.",
+    "img": "https://www.boteboard.com/cdn/shop/files/126iZP22NA-photo-01Copy-min.png?v=1726529464",
+    "season": "Summer"
+  },
+  {
+    "id": "K2",
+    "model": "Wilderness Systems Pungo 120",
+    "type": "Kayak",
+    "length": "12'0\"",
+    "price": {
+      "full_day": 70.0,
+      "half_day": 40.0
     },
-    {
-      "id": "K3",
-      "model": "Old Town Predator PDL",
-      "type": "Kayak",
-      "length": "13'0\"",
-      "price": {
-        "full_day": 90.00,
-        "half_day": 55.00
-      },
-      "description": "A high-performance pedal-powered kayak designed for fishing enthusiasts, with excellent stability and storage.",
-      "img": "https://ecofishingshop.com/cdn/shop/products/old-town-sportsman-bigwater-pdl-132-ember-camo_eb6ab9cd-75b6-4944-90f9-d92252404a2f_600x600.jpg?v=1678304972",
-      "season": "summer"
+    "description": "A stable, fast, and comfortable kayak, perfect for exploring lakes and rivers.",
+    "img": "https://ecofishingshop.com/cdn/shop/products/wilderness-systems-pungo-120-3_600x600.jpg?v=1671558020",
+    "season": "Summer"
+  },
+  {
+    "id": "K3",
+    "model": "Old Town Predator PDL",
+    "type": "Kayak",
+    "length": "13'0\"",
+    "price": {
+      "full_day": 90.0,
+      "half_day": 55.0
     },
-    {
-      "id": "S1",
-      "model": "Arctic Cat ZR 6000",
-      "type": "Trail Snowmobile",
-      "engine": "600cc",
-      "price": {
-        "full_day": 120.00,
-        "half_day": 70.00
-      },
-      "description": "A powerful, lightweight trail snowmobile designed for performance and handling.",
-      "img": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/2717501-0-8429331.jpg",
-      "season": "winter"
+    "description": "A high-performance pedal-powered kayak designed for fishing enthusiasts, with excellent stability and storage.",
+    "img": "https://ecofishingshop.com/cdn/shop/products/old-town-sportsman-bigwater-pdl-132-ember-camo_eb6ab9cd-75b6-4944-90f9-d92252404a2f_600x600.jpg?v=1678304972",
+    "season": "Summer"
+  },
+  {
+    "id": "S1",
+    "model": "Arctic Cat ZR 6000",
+    "type": "Trail Snowmobile",
+    "engine": "600cc",
+    "price": {
+      "full_day": 120.0,
+      "half_day": 70.0
     },
-    {
-      "id": "S2",
-      "model": "Ski-Doo Renegade X",
-      "type": "Mountain Snowmobile",
-      "engine": "850cc",
-      "price": {
-        "full_day": 150.00,
-        "half_day": 85.00
-      },
-      "description": "A versatile snowmobile ideal for off-trail exploration and tough terrain.",
-      "img": "https://spec.dlrwebservice.com/sb-ps/2024_Ski-Doo_RenegadeX_900ACETurbo137.jpg",
-      "season": "winter"
+    "description": "A powerful, lightweight trail snowmobile designed for performance and handling.",
+    "img": "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/2717501-0-8429331.jpg",
+    "season": "Winter"
+  },
+  {
+    "id": "S2",
+    "model": "Ski-Doo Renegade X",
+    "type": "Mountain Snowmobile",
+    "engine": "850cc",
+    "price": {
+      "full_day": 150.0,
+      "half_day": 85.0
     },
-    {
-      "id": "S3",
-      "model": "Polaris RMK Khaos",
-      "type": "Mountain Snowmobile",
-      "engine": "850cc",
-      "price": {
-        "full_day": 160.00,
-        "half_day": 95.00
-      },
-      "description": "Built for deep snow and rugged trails, the RMK Khaos is perfect for mountain riding.",
-      "img": "https://sleddermag.com/wp-content/uploads/2019/03/2020-Polaris-RMK-KHAOS2-1024x576.jpg",
-      "season": "winter"
+    "description": "A versatile snowmobile ideal for off-trail exploration and tough terrain.",
+    "img": "https://spec.dlrwebservice.com/sb-ps/2024_Ski-Doo_RenegadeX_900ACETurbo137.jpg",
+    "season": "Winter"
+  },
+  {
+    "id": "S3",
+    "model": "Polaris RMK Khaos",
+    "type": "Mountain Snowmobile",
+    "engine": "850cc",
+    "price": {
+      "full_day": 160.0,
+      "half_day": 95.0
     },
-    {
-      "id": "S4",
-      "model": "Yamaha VK540",
-      "type": "Utility Snowmobile",
-      "engine": "540cc",
-      "price": {
-        "full_day": 110.00,
-        "half_day": 60.00
-      },
-      "description": "A reliable and durable snowmobile for utility purposes and hauling heavy loads.",
-      "img": "https://cdnmedia.endeavorsuite.com/images/catalogs/21286/products/detail/471b12e1-25f0-4db3-b065-5dfb02cfaeea.jpg",
-      "season": "winter"
+    "description": "Built for deep snow and rugged trails, the RMK Khaos is perfect for mountain riding.",
+    "img": "https://sleddermag.com/wp-content/uploads/2019/03/2020-Polaris-RMK-KHAOS2-1024x576.jpg",
+    "season": "Winter"
+  },
+  {
+    "id": "S4",
+    "model": "Yamaha VK540",
+    "type": "Utility Snowmobile",
+    "engine": "540cc",
+    "price": {
+      "full_day": 110.0,
+      "half_day": 60.0
     },
-    {
-      "id": "G1",
-      "model": "Snowmobile Gear Kit",
-      "type": "Gear and Accessories",
-      "price": {
-        "full_day": 30.00,
-        "half_day": 20.00
-      },
-      "description": "Includes complete snowmobile gear, including a helmet, gloves, and boots to ensure safety and comfort during your snowmobiling adventure.",
-      "img": "https://www.kitlender.com/media/cache/5b/27/5b270dcd6676a68ab513ec4b3a76d91e.jpg",
-      "season": "winter"
-    }
-  ]
-  
+    "description": "A reliable and durable snowmobile for utility purposes and hauling heavy loads.",
+    "img": "https://cdnmedia.endeavorsuite.com/images/catalogs/21286/products/detail/471b12e1-25f0-4db3-b065-5dfb02cfaeea.jpg",
+    "season": "Winter"
+  },
+  {
+    "id": "G1",
+    "model": "Snowmobile Gear Kit",
+    "type": "Gear and Accessories",
+    "price": {
+      "full_day": 30.0,
+      "half_day": 20.0
+    },
+    "description": "Includes complete snowmobile gear, including a helmet, gloves, and boots to ensure safety and comfort during your snowmobiling adventure.",
+    "img": "https://www.kitlender.com/media/cache/5b/27/5b270dcd6676a68ab513ec4b3a76d91e.jpg",
+    "season": "Winter"
+  }
+]

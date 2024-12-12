@@ -1,81 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Island Park Expeditions">
-  <meta name="keywords" content="Island Park, Rentals, Snowmobiles,Kayaks">
-  <meta name="author" content="Valeria Bisso">
-  <link rel="stylesheet" href="../css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.css" rel="stylesheet">
-  <title>Rentals</title>
-</head>
-<body>
-  <header id="main-header">
-
-  </header>
-  <main class="main-content">
-
-    <div class="product-page-wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Island Park Expeditions" />
+    <meta name="keywords" content="Island Park, Rentals, Snowmobiles,Kayaks" />
+    <meta name="author" content="Valeria Bisso" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.css"
+      rel="stylesheet"
+    />
+    <title>Rentals</title>
+  </head>
+  <body>
+    <header id="main-header" class="flex-row"></header>
+    <main class="main-content">
+      <div class="product-page-wrapper">
         <section class="product-detail">
           <h3 id="productName"></h3>
-          <p style="font-style: italic; text-align:center" >Ages 18+ to Rent • Perfect for all Experience Levels</p>
+          <p style="font-style: italic; text-align: center">
+            Ages 18+ to Rent • Perfect for all Experience Levels
+          </p>
 
           <img id="productImg" src="" alt="" />
-        
+
           <p id="product_description"></p>
-          <div class="about-the-rental"> 
+          <div class="about-the-rental">
             <h4>Age Requirements</h4>
             <li>Must be 18 or older to rent.</li>
-            <li>Waivers must be signed for all participants before the start of your rental at check in.</li>
+            <li>
+              Waivers must be signed for all participants before the start of
+              your rental at check in.
+            </li>
             <h4>Additional Information</h4>
-            <li>Forget the hassle of packing lunch - visit our Blue Buffalo Grill offering pizza, sandwiches, and more.</li>
-            <li>We will give you a recommended itinerary for your rental, but you can call us to hear our recommended guides in the area available to rent for the day.</li>
+            <li>
+              Forget the hassle of packing lunch - visit our Blue Buffalo Grill
+              offering pizza, sandwiches, and more.
+            </li>
+            <li>
+              We will give you a recommended itinerary for your rental, but you
+              can call us to hear our recommended guides in the area available
+              to rent for the day.
+            </li>
           </div>
+        </section>
 
-        
-          
-          
-          
+        <section class="book-now-calendar">
+          <div id="calendar"></div>
 
-      </section>
-
-      <section class="book-now-calendar">
-
-        <div id="calendar">
-          
-        </div>
-
-        <div class="product_prices_container hide">
-          <div class="product_prices_wrapper" >
-            <p class="product_prices" id="product_price_full" ></p> 
-            <p>Full Day Rental</p>
-            <p style="justify-self: end;">&#8594;</p>
+          <div class="product_prices_container hide">
+            <div class="product_prices_wrapper">
+              <p class="product_prices" id="product_price_full"></p>
+              <p>Full Day Rental</p>
+              <p style="justify-self: end">&#8594;</p>
+            </div>
+            <div class="product_prices_wrapper">
+              <p class="product_prices" id="product_price_half"></p>
+              <p>Half Day Rental</p>
+              <p style="justify-self: end">&#8594;</p>
+            </div>
           </div>
-          <div class="product_prices_wrapper">
-            <p class="product_prices" id="product_price_half" ></p>
-            <p>Half Day Rental</p>
-            <p style="justify-self: end;">&#8594;</p>
-          </div>
-       
-        </div>
+        </section>
+      </div>
+    </main>
 
-      </section>
-
-    </div>
-    
-
-  </main>
-
-
-  <footer id="main-footer">
- 
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.js"></script>
-  <script src="../js/product-page.js" type="module"></script>
-  
-
-</body>
+    <footer id="main-footer" class="flex-row"></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.2.0/dist/fullcalendar.min.js"></script>
+    <script src="../js/product-page.js" type="module"></script>
+  </body>
 </html>
