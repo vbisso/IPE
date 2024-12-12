@@ -35,7 +35,7 @@ export async function loadHeaderFooter() {
 }
 
 export async function fetchProducts(category) {
-  const response = await fetch(`/public/json/products.json`);
+  const response = await fetch(`./products.json`);
   const products = await convertToJson(response);
 
   if (category) {
@@ -86,7 +86,7 @@ export function renderListWithTemplate(
 }
 
 export async function findProductById(id) {
-  const response = await fetch(`/public/json/products.json`);
+  const response = await fetch(`'./products.json'`);
   const products = await convertToJson(response);
 
   const product = products.find((product) => product.id === id);
