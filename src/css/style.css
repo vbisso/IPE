@@ -241,7 +241,7 @@ button {
 }
 /*products-home*/
 .padding-left {
-  padding: 3.5rem;
+  padding: 1.5rem 3.5rem;
 }
 li {
   list-style: none;
@@ -419,11 +419,15 @@ p {
 .book-details {
   display: flex;
   flex-direction: row;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .book-detail-left {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 select {
@@ -444,6 +448,11 @@ select {
 }
 .book-detail-left > :first-child {
   text-decoration: underline;
+}
+.go-back-arrow {
+  cursor: pointer;
+  font-size: 3rem;
+  padding-left: 2rem;
 }
 .hide {
   display: none;

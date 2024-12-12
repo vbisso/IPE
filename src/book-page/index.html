@@ -12,17 +12,24 @@
   <body>
     <header id="main-header" class="flex-row"></header>
     <main id="main-content">
+      <a class="go-back-arrow" href="../product-list/index.html">←</a>
       <h2 class="padding-left">You are booking</h2>
 
       <section class="book-details">
-        <img style="width: 30%" id="book-details-img" src="" alt="" />
+        <div class="product-detail">
+          <h3 id="book-details-model"></h3>
+          <p style="font-style: italic; text-align: center">
+            Ages 18+ to Rent • Perfect for all Experience Levels
+          </p>
+
+          <img id="book-details-img" src="" alt="" />
+        </div>
 
         <div class="book-detail-left">
-          <h3 id="book-details-model"></h3>
           <h3 id="book-details-option"></h3>
           <p id="book-details-date"></p>
           <div class="half-day-options-form hide">
-            <p>Please select half day option:</p>
+            <p>Select Half Day Option:</p>
             <div class="half-day-options white-border">
               <input
                 type="radio"
@@ -60,6 +67,63 @@
         </div>
       </section>
       <div class="divider"></div>
+
+      <section class="book-confirmation hide flex-column">
+        <div class="renter-agreement-container white-border">
+          <label for="renter-agreement">
+            <input required type="checkbox" id="renter-agreement" /> By checking
+            this box, I understand that I (the renter) am 18 or older
+            <p style="color: red; display: inline">*</p>
+          </label>
+        </div>
+
+        <div class="total-container">
+          <p id="sub-total"></p>
+          <p id="taxes"></p>
+          <p id="total"></p>
+        </div>
+
+        <div class="payment-container">
+          
+          <form id="payment-form">
+            <h4>Contact Information</h4>
+
+            <label for="full-name">Full Name</label>
+            <input required type="text" id="first-name" />
+
+            <label for="email">Email address</address></label>
+            <input required type="email" id="email" />
+
+            <label for="phone">Phone Number</label>
+            <input required type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+
+            <h4>Payment</h4>
+
+            <label for="card-number">Card Number</label>
+            <input required type="text" id="card-number" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"/>
+
+            <label for="name-on-card">Name on Card</label>
+            <input required type="text" id="name-on-card" />
+
+            <div class="flex-row">
+              <label for="expiration-date">Expiration Date</label>
+              <input required type="month" id="expiration-date" pattern="[0-9]{2}/[0-9]{2}"/>
+
+              <label for="cvv">CVV</label>
+              <input required type="text" id="cvv" pattern="[0-9]{3}"/>
+            </div>
+            
+            <label for="zip-code">Billing Zip Code</label>
+            <input type="text" id="zip-code" required pattern="[0-9]{5}">
+            
+
+            <button class="button-wrapper" type="submit">Book & Pay</button>
+
+          </form>
+
+        </div>
+
+      </section>
     </main>
 
     <footer id="main-footer" class="flex-row"></footer>
