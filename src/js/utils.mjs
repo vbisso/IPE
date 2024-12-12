@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+const JSON_URL = `https://vbisso.github.io/IPE/src/public/json/products.json`;
 
 async function convertToJson(res) {
   const data = await res.json();
@@ -35,7 +36,7 @@ export async function loadHeaderFooter() {
 }
 
 export async function fetchProducts(category) {
-  const response = await fetch(`./products.json`);
+  const response = await fetch(JSON_URL);
   const products = await convertToJson(response);
 
   if (category) {
@@ -86,7 +87,7 @@ export function renderListWithTemplate(
 }
 
 export async function findProductById(id) {
-  const response = await fetch(`'./products.json'`);
+  const response = await fetch(JSON_URL);
   const products = await convertToJson(response);
 
   const product = products.find((product) => product.id === id);
