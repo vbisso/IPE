@@ -96,8 +96,8 @@ a {
   display: block;
   padding-left: 25px;
 }
-#main-header a,
-#main-header-home-page a {
+
+.nav-menu a {
   padding: 0px 20px;
   text-decoration: none;
   color: var(--white);
@@ -548,10 +548,11 @@ select {
 .overlay-menu ul li {
   margin: 20px 0;
 }
-
+.overlay-menu ul li a {
+  color: var(--white);
+}
 .overlay-menu {
   font-size: 24px;
-  color: var(--black);
   text-decoration: none;
   display: block;
 }
