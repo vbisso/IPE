@@ -17,7 +17,7 @@
   --air-superiority-blue: #7c93aaff;
   --powder-blue: #97b5d1ff;
   --van-dyke: #3e2f2dff;
-  --gray: #787c84ff;
+  --gray: rgba(120, 124, 132, 0.139);
   --powder-blue-2: #a8b4c6ff;
   --steel-blue: #365b6d;
 
@@ -316,7 +316,15 @@ p {
 .what-to-eat-padding {
   padding: 0 4rem 4rem 2rem;
 }
-
+/*map*/
+.map {
+  margin: 4rem;
+}
+iframe {
+  margin-top: 2rem;
+  width: 100%;
+  height: 500px;
+}
 /*product-list*/
 .products-list {
   display: flex;
@@ -454,6 +462,59 @@ select {
   font-size: 3rem;
   padding-left: 2rem;
 }
+/*book-confirmation*/
+.total-container {
+  font-size: 1.25rem;
+}
+.book-confirmation {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+#payment-form {
+  margin: auto;
+}
+
+.cvc-expiration-wrapper {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.total-container {
+  padding: 2.2rem;
+  align-items: flex-end;
+  background-color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+#payment-form input {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: solid 1px var(--gray);
+  margin-bottom: 1rem;
+}
+#payment-form input:required {
+  border-right: solid 8px rgb(234, 64, 64);
+}
+#payment-form #expiration-date,
+#payment-form #cvv {
+  width: calc((600px / 2) - 0.25rem);
+}
+#submit-button {
+  display: flex;
+  justify-self: center;
+}
+.book-confirmed {
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+}
+
 .hide {
   display: none;
 }
