@@ -33,6 +33,38 @@ export async function loadHeaderFooter() {
   if (footerEl) {
     await renderWithTemplate(footerTemplateFn, footerEl);
   }
+
+  loadResponsiveMenu();
+}
+
+export function loadResponsiveMenu() {
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const overlayMenu = document.querySelector(".overlay-menu");
+  const closeBtn = document.querySelector(".close-btn");
+  const menuLinks = document.querySelectorAll(".overlay-menu a");
+
+  hamburgerMenu.addEventListener("click", () => {
+    overlayMenu.style.transform = "translateX(0)";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    overlayMenu.style.transform = "translateX(-100%)";
+  });
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      overlayMenu.style.transform = "translateX(-100%)";
+    });
+  });
+
+  window.addEventListener("click", (event) => {
+    if (
+      !overlayMenu.contains(event.target) &&
+      !hamburgerMenu.contains(event.target)
+    ) {
+      overlayMenu.style.transform = "translateX(-100%)";
+    }
+  });
 }
 
 export async function fetchProducts(category) {
