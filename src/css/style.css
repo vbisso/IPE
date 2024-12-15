@@ -79,9 +79,9 @@ a {
 #main-header-home-page {
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 100;
-  margin-bottom: -20vh;
 }
 #main-header {
   background-color: var(--blue);
@@ -646,7 +646,10 @@ select {
 
   #main-header img,
   #main-header-home-page img {
-    width: 50%;
+    width: 65%;
+  }
+  #main-header-home-page img {
+    padding-top: 10px;
   }
 }
 @media screen and (max-width: 425px) {
