@@ -61,10 +61,6 @@ function calculateSubtotal(bookItem) {
 export default function bookPage() {
   const bookItems = getLocalStorage("so-book");
 
-  if (!bookItems) {
-    window.location.href = "../product-list/index.html";
-  }
-
   if (bookItems[0].selectedOption === "Half Day") {
     document.querySelector(".half-day-options-form").classList.remove("hide");
   }

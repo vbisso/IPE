@@ -126,6 +126,9 @@ h3 {
 #contact-footer > p:nth-of-type(odd) {
   margin-top: 15px;
 }
+#contact-footer > * {
+  word-break: break-word;
+}
 
 #social-footer {
   text-align: right;
@@ -351,6 +354,7 @@ iframe {
   border: 1px solid var(--white);
   border-radius: 10px;
   margin: 1rem;
+  min-height: 510px;
 }
 
 .product-container img {
@@ -439,6 +443,7 @@ iframe {
   row-gap: 1rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 0 15px;
 }
 .book-detail-left {
   display: flex;
@@ -605,6 +610,14 @@ select {
   }
   h2 {
     font-size: 2rem;
+  }
+  .cvc-expiration-wrapper {
+    grid-template-columns: 1fr;
+  }
+  #payment-form #expiration-date,
+  #payment-form #cvv {
+    width: 100%;
+    max-width: 600px;
   }
 }
 @media screen and (max-width: 500px) {
